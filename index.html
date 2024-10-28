@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="./assets/style.css" />
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
@@ -37,7 +38,7 @@
       <div class="absolute bottom-10">
         <img class="w-[100%]" src="./assets/ornamen/mountain.webp" alt="" />
       </div>
-      <div class="absolute bottom-10 z-10">
+      <div class="absolute bottom-10 z-20">
         <img
           class="w-[100%] h-[30%]"
           src="./assets/ornamen/pagar.webp"
@@ -101,31 +102,34 @@
         Buka Undangan
       </button>
       <div class="w-full absolute bottom-0 left-0">
-        <img
-          class="tree2 absolute -bottom-20 h-[30vh] -left-9 z-10"
-          src="./assets/ornamen/tree.webp"
-          alt=""
-        />
-        <img
-          class="slide-top absolute -bottom-0 h-[30vh] -left-9 z-10"
-          src="./assets/ornamen/flower-2.webp"
-          alt=""
-        />
-        <img
-          class="slide-top absolute -bottom-0 h-[20vh] -left-6 z-10"
-          src="./assets/ornamen/flower-1.webp"
-          alt=""
-        />
-        <img
-          class="slide-top absolute -bottom-9 h-[17vh] left-3 z-10"
-          src="./assets/ornamen/flower-3.webp"
-          alt=""
-        />
-        <img
-          class="slide-top absolute -bottom-12 h-[15vh] left-[30%] z-10"
-          src="./assets/ornamen/flower-4.webp"
-          alt=""
-        />
+        <div class="relative slide-top z-20">
+          <img
+            class="tree2 absolute -bottom-20 h-[30vh] -left-9 z-10"
+            src="./assets/ornamen/tree.webp"
+            alt=""
+          />
+          <img
+            class="tree2 absolute -bottom-0 h-[30vh] -left-9 z-10"
+            src="./assets/ornamen/flower-2.webp"
+            alt=""
+          />
+          <img
+            class="tree absolute -bottom-0 h-[20vh] -left-6 z-10"
+            src="./assets/ornamen/flower-1.webp"
+            alt=""
+          />
+          <img
+            class="slide-top absolute -bottom-9 h-[17vh] left-3 z-10"
+            src="./assets/ornamen/flower-3.webp"
+            alt=""
+          />
+          <img
+            class="slide-top absolute -bottom-12 h-[15vh] left-[30%] z-10"
+            src="./assets/ornamen/flower-4.webp"
+            alt=""
+          />
+
+        </div>
         <div class="relative transform -scale-x-100 z-20">
           <img
             class="tree absolute -bottom-20 h-[30vh] -left-9 z-10"
@@ -157,7 +161,7 @@
     </div>
 
     <!-- slide 2 -->
-    <div id="display2" class="slide-in-blurred-bottom" style="display: none">
+    <div id="display2" class="" style="display: none">
       <div class="relative display1 w-full h-[100vh] overflow-hidden">
         <div class="absolute bottom-[40%] left-[-40%]">
           <img
@@ -262,25 +266,30 @@
       </div>
 
       <!-- slide 3 -->
-      <div class="relative display1 w-full h-[100vh] overflow-hidden">
-        <div class="absolute top-0 left-0 w-full">
-          <img
+      <div class="relative  display1 w-full h-[100vh] overflow-hidden">
+        <div class="absolute top-0 left-0 w-full ">
+          <img 
+            data-aos="fade-right"
+            data-aos-duration="2000"
+            
             class="absolute w-[210px] h-[210px] -top-2 -left-4"
             src="./assets/ornamen/tree-left.png"
             alt=""
           />
-          <img
-            class="absolute w-[210px] h-[210px] -top-2 -right-4"
+          <img 
+            data-aos="fade-left"
+            data-aos-duration="2000"
+            class="absolute w-[210px] h-[210px] -top-2 -right-4" 
             src="./assets/ornamen/tree-right.png"
             alt=""
           />
         </div>
         <div
-          class="delay-[300ms] duration-[600ms] taos:translate-y-[200px] taos:opacity-0 relative w-full h-[85vh] flex items-center justify-center mb-10 z-30"
+          class="delay-[300ms] duration-[600ms] relative w-full h-[85vh] flex items-center justify-center mb-10 z-30"
         >
           <div
             class="relative flex flex-col items-center justify-center bg-cover bg-center mx-[10vh] mt-[10vh] items-center rounded-lg h-[50vh] w-[50vh]"
-          >
+          data-aos="fade-right">
             <h1
               class="cinzel-decorative-bold text-[20px] text-center text-black mb-5"
             >
@@ -318,6 +327,8 @@
             alt=""
           />
           <img
+            data-aos="fade-up"
+            data-aos-duration="2000"
             class="absolute -bottom-10 -left-0 z-20"
             src="./assets/ornamen/arch.webp"
             alt=""
@@ -2469,7 +2480,7 @@
         audio.play();
       });
     </script>
-    <script src="https://unpkg.com/taos@1.0.5/dist/taos.js"></script>
+
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
       const swiper = new Swiper(".mySwiper", {
@@ -2550,6 +2561,10 @@
       Fancybox.bind("[data-fancybox]", {
         // Your custom options
       });
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
     </script>
   </body>
 </html>
