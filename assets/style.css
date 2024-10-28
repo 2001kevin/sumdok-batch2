@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+body{
+  background-color: #b7dde3;
+}
+
 #display1 {
   height: 100vh;
   /* background-image: url("./ornamen/bg\ full\ \(1\)\ \(1\).webp"); */
@@ -12,6 +16,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  max-width: 450px; /* Batas maksimal lebar */
+  margin: 0 auto;   /* Menjadikan halaman berada di tengah */
+  width: 100%;
 }
 
 .display1 {
@@ -20,6 +27,9 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  max-width: 450px; /* Batas maksimal lebar */
+  margin: 0 auto;   /* Menjadikan halaman berada di tengah */
+  width: 100%;
 }
 
 .display3 {
