@@ -16,11 +16,9 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 550px; /* Batas maksimal lebar */
-  min-height: 800px;
+  max-width: 700px; /* Batas maksimal lebar */
   margin: 0 auto;   /* Menjadikan halaman berada di tengah */
   width: 100%;
-  height: 100%;
 }
 
 .display1 {
@@ -29,11 +27,9 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 550px; /* Batas maksimal lebar */
-  min-height: 800px;
+  max-width: 700px; /* Batas maksimal lebar */
   margin: 0 auto;   /* Menjadikan halaman berada di tengah */
   width: 100%;
-  height: 100%;
 }
 
 .display3 {
