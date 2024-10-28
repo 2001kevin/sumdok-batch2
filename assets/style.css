@@ -5,7 +5,7 @@
   box-sizing: border-box;
 }
 
-body{
+body {
   background-color: #b7dde3;
 }
 
@@ -17,7 +17,7 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   max-width: 700px; /* Batas maksimal lebar */
-  margin: 0 auto;   /* Menjadikan halaman berada di tengah */
+  margin: 0 auto; /* Menjadikan halaman berada di tengah */
   width: 100%;
 }
 
@@ -28,7 +28,7 @@ body{
   background-repeat: no-repeat;
   background-position: center;
   max-width: 700px; /* Batas maksimal lebar */
-  margin: 0 auto;   /* Menjadikan halaman berada di tengah */
+  margin: 0 auto; /* Menjadikan halaman berada di tengah */
   width: 100%;
 }
 
@@ -38,6 +38,31 @@ body{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+}
+
+.branch {
+  display: inline-block;
+  animation: sway 3s ease-in-out infinite; /* Animasi */
+}
+
+.branch.left {
+  animation: sway-left 3s ease-in-out infinite; /* Animasi untuk ranting kiri */
+}
+
+.branch.right {
+  animation: sway-right 3s ease-in-out infinite; /* Animasi untuk ranting kanan */
+}
+
+@keyframes sway {
+  0% {
+    transform: rotate(5deg); /* Posisi awal */
+  }
+  50% {
+    transform: rotate(-5deg); /* Posisi tengah */
+  }
+  100% {
+    transform: rotate(5deg); /* Kembali ke posisi awal */
+  }
 }
 
 @keyframes sway-left {
@@ -68,9 +93,9 @@ body{
 }
 
 .slide-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .tree2 {

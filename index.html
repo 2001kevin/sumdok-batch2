@@ -288,8 +288,9 @@
           class="delay-[300ms] duration-[600ms] relative w-full h-[85vh] flex items-center justify-center mb-10 z-30"
         >
           <div
+            id="tulisan"
             class="relative flex flex-col items-center justify-center bg-cover bg-center mx-[10vh] mt-[10vh] items-center rounded-lg h-[50vh] w-[50vh]"
-          data-aos="fade-right">
+          data-aos="zoom-in" data-aos-offset="400" data-aos-duration="3000">
             <h1
               class="cinzel-decorative-bold text-[20px] text-center text-black mb-5"
             >
@@ -327,8 +328,10 @@
             alt=""
           />
           <img
+            id="arch"
             data-aos="fade-up"
-            data-aos-duration="2000"
+            data-aos-duration="3000"
+            data-aos-offset="300"
             class="absolute -bottom-10 -left-0 z-20"
             src="./assets/ornamen/arch.webp"
             alt=""
@@ -353,19 +356,29 @@
             class="w-[100%] bg-cover scale-125"
             src="./assets/ornamen/bg-cloud.webp"
             alt=""
+            data-aos="fade-in-fwd"
+            data-aos-duration="3000"
+            id="awan"
           />
         </div>
-        <div class="absolute top-0 left-0 w-full">
+        <div class=" absolute top-0 left-0 w-full" 
+          data-aos="fade-down"
+          data-aos-duration="2000"
+          data-aos-anchor="#awan">
           <img
-            class="absolute w-[210px] h-[210px] -top-12 -left-11"
+            class="branch left absolute w-[210px] h-[210px] -top-12 -left-11"
             src="./assets/ornamen/branch-1.webp"
             alt=""
           />
-          <img
-            class="absolute w-[210px] h-[210px] -top-12 -right-11 transform -scale-x-100"
-            src="./assets/ornamen/branch-1.webp"
-            alt=""
-          />
+          <div class="transform -scale-x-100 -top-12 -right-11 ">
+            <img
+              
+              class="absolute w-[210px] h-[210px]  branch right "
+              src="./assets/ornamen/branch-1.webp"
+              alt=""
+            />
+
+          </div>
         </div>
         <div
           class="relative fade-in-fwd w-full h-[85vh] flex items-center justify-center mb-10"
@@ -382,17 +395,23 @@
           <div
             class="relative flex flex-col items-center overflow-hidden justify-center bg-cover bg-center mx-[5vh] items-center z-10 rounded-lg h-[50vh] w-[50vh]"
             style="background-image: url('./assets/ornamen/bg-cloud.webp')"
-          >
+            data-aos="fade-in-fwd"
+            data-aos-duration="2000"
+            >
+          <div class="absolute -top-4 w-[17vh] -left-7  transform -scale-y-100">
             <img
-              class="absolute -top-4 w-[17vh] -left-7 transform -scale-y-100"
+              class="tree "
+              data-aos="fade-in"
               src="./assets/ornamen/flower-3 (1).webp"
               alt=""
             />
             <img
-              class="absolute -top-4 w-[17vh] -left-7 transform -scale-y-100"
+              class="tree"
+              data-aos="fade-in"
               src="./assets/ornamen/flower-1_2.webp"
               alt=""
             />
+          </div>
 
             <h1
               class="castoro-regular text-[18px] text-center text-black mb-5 z-10"
@@ -417,12 +436,12 @@
               >Buka Map</a
             >
             <img
-              class="absolute -bottom-4 w-[17vh] -right-4"
+              class="tree2 absolute -bottom-4 w-[17vh] -right-4"
               src="./assets/ornamen/flower-3 (1).webp"
               alt=""
             />
             <img
-              class="absolute -bottom-4 w-[17vh] -right-4"
+              class="tree2 absolute -bottom-4 w-[17vh] -right-4"
               src="./assets/ornamen/flower-1_2.webp"
               alt=""
             />
@@ -433,52 +452,72 @@
             class="tree2 absolute -bottom-20 h-[30vh] -left-9 z-10 md:h-[40vh]"
             src="./assets/ornamen/tree.webp"
             alt=""
+            data-aos="fade-right"       
+            data-aos-easing="ease-in-sine"
           />
           <img
-            class="slide-top absolute -bottom-0 h-[30vh] -left-9 z-10 md:h-[40vh]"
+            class="tree absolute -bottom-0 h-[30vh] -left-9 z-10 md:h-[40vh]"
             src="./assets/ornamen/flower-2.webp"
             alt=""
+            data-aos="fade-right"       
+            data-aos-easing="ease-in-sine"
           />
           <img
-            class="slide-top absolute -bottom-0 h-[20vh] -left-6 z-10 md:h-[25vh]"
+            class="tree absolute -bottom-0 h-[20vh] -left-6 z-10 md:h-[25vh]"
             src="./assets/ornamen/flower-1.webp"
+            data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
             alt=""
           />
           <img
-            class="slide-top absolute -bottom-9 h-[17vh] left-3 z-10 md:h-[22vh]"
+            class="tree2 absolute -bottom-9 h-[17vh] left-3 z-10 md:h-[22vh]"
             src="./assets/ornamen/flower-3.webp"
             alt=""
+            data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
           />
           <img
-            class="slide-top absolute -bottom-12 h-[15vh] left-[30%] z-10 md:h-[20vh]"
+            class="tree2 absolute -bottom-12 h-[15vh] left-[30%] z-10 md:h-[20vh]"
             src="./assets/ornamen/flower-4.webp"
             alt=""
+            data-aos="fade-right"
+            data-aos-easing="ease-in-sine"
           />
           <div class="relative transform -scale-x-100 z-20">
             <img
               class="tree absolute -bottom-20 h-[30vh] -left-9 z-10 md:h-[40vh]"
               src="./assets/ornamen/tree.webp"
               alt=""
+              data-aos="fade-right"       
+              data-aos-easing="ease-in-sine"
             />
             <img
-              class="slide-top absolute -bottom-0 h-[30vh] -left-9 z-15 md:h-[40vh]"
+              class="tree absolute -bottom-0 h-[30vh] -left-9 z-15 md:h-[40vh]"
               src="./assets/ornamen/flower-2.webp"
               alt=""
+              data-aos="fade-right"       
+              data-aos-easing="ease-in-sine"
             />
             <img
-              class="slide-top absolute -bottom-0 h-[20vh] -left-6 z-10 md:h-[25vh]"
+              class="tree2 absolute -bottom-0 h-[20vh] -left-6 z-10 md:h-[25vh]"
               src="./assets/ornamen/flower-1.webp"
               alt=""
+              data-aos="fade-right"       
+              data-aos-easing="ease-in-sine"
             />
             <img
-              class="slide-top absolute -bottom-9 h-[17vh] left-3 z-10 md:h-[22vh]"
+              class="tree2 absolute -bottom-9 h-[17vh] left-3 z-10 md:h-[22vh]"
               src="./assets/ornamen/flower-3.webp"
               alt=""
+              data-aos="fade-right"       
+              data-aos-easing="ease-in-sine"
             />
             <img
-              class="slide-top absolute -bottom-12 h-[15vh] left-[30%] z-10 md:h-[20vh]"
+              class="tree absolute -bottom-12 h-[15vh] left-[30%] z-10 md:h-[20vh]"
               src="./assets/ornamen/flower-4.webp"
               alt=""
+              data-aos="fade-right"       
+              data-aos-easing="ease-in-sine"
             />
           </div>
         </div>
@@ -2467,19 +2506,7 @@
         <p>Copyright ©2024 Created with ❤️ by Cevin's Invitations</p>
       </div>
     </div>
-    <script>
-      const display1 = document.getElementById("display1");
-      const display2 = document.getElementById("display2");
-      const audio = document.getElementById("myAudio");
-
-      const undanganButton = document.getElementById("buka-undangan");
-
-      undanganButton.addEventListener("click", function () {
-        display1.style.display = "none";
-        display2.style.display = "block";
-        audio.play();
-      });
-    </script>
+    
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
@@ -2564,7 +2591,21 @@
     </script>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
-      AOS.init();
+      AOS.init({ once:true });
+    </script>
+    <script>
+      const display1 = document.getElementById("display1");
+      const display2 = document.getElementById("display2");
+      const audio = document.getElementById("myAudio");
+
+      const undanganButton = document.getElementById("buka-undangan");
+
+      undanganButton.addEventListener("click", function () {
+        display1.style.display = "none";
+        display2.style.display = "block";
+        audio.play();
+        AOS.refresh();
+      });
     </script>
   </body>
 </html>
